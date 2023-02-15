@@ -1,4 +1,4 @@
-const {Schema, model, Types} = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 
 const date = require('moment');
 
@@ -15,7 +15,7 @@ const ReactionSchema = new Schema(
         },
         username: {
             type: String,
-            required: [true, 'Username is required']
+
         },
         createdAt: {
             type: Date,
@@ -45,8 +45,8 @@ const ThoughtSchema = new Schema(
         },
         username: {
             type: String,
-            required: [true, 'Username is required']
-        
+
+
         },
 
         reactions: [ReactionSchema]
@@ -60,7 +60,7 @@ const ThoughtSchema = new Schema(
     }
 );
 
-ThoughtSchema.virtual('reactionCount').get(function() {
+ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 })
 
