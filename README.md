@@ -20,6 +20,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Screenshot
 
+![routes](https://user-images.githubusercontent.com/112447725/219117694-cee44661-30b5-45ad-8f54-df369dd816ec.png)
 
 
 ## Links
